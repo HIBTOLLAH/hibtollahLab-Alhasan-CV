@@ -117,7 +117,7 @@ export function ContactModal({ isOpen, onClose, personal, lang }) {
             <div>
               <input 
                 type="text" 
-                placeholder={isAr ? 'الاسم الكريم / Name' : (isTr ? 'Adınız Soyadınız' : 'Your Name')} 
+                placeholder={isAr ? 'الاسم' : (isTr ? 'Adınız Soyadınız' : 'Your Name')} 
                 required 
                 value={formData.name} 
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
@@ -127,7 +127,7 @@ export function ContactModal({ isOpen, onClose, personal, lang }) {
             <div>
               <input 
                 type="email" 
-                placeholder={isAr ? 'البريد الإلكتروني للراسل / Email' : (isTr ? 'E-posta Adresiniz' : 'Your Email Address')} 
+                placeholder={isAr ? 'البريد الإلكتروني' : (isTr ? 'E-posta Adresiniz' : 'Your Email Address')} 
                 required 
                 value={formData.email} 
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
@@ -137,7 +137,7 @@ export function ContactModal({ isOpen, onClose, personal, lang }) {
             <div>
               <textarea 
                 rows="4" 
-                placeholder={isAr ? 'نص الرسالة / Your Message...' : (isTr ? 'Mesajınız...' : 'Your Message...')} 
+                placeholder={isAr ? 'الرسالة' : (isTr ? 'Mesajınız...' : 'Your Message...')} 
                 required 
                 value={formData.message} 
                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
