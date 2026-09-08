@@ -26,8 +26,8 @@
   --radius-md: 12px;
   --radius-lg: 18px;
 
-  --font-ar: 'Cairo', 'Amiri', system-ui, sans-serif;
-  --font-en: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-ar: 'Cairo', sans-serif;
+  --font-en: 'Inter', sans-serif;
 }
 
 * {
@@ -1369,6 +1369,66 @@ html[dir="rtl"] .modal-close {
 }
 
 /* ========================================================
+   PROJECTS GRID & MOBILE CAROUSEL
+   ======================================================== */
+.carousel-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 28px;
+}
+
+@media (max-width: 768px) {
+  .carousel-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 12px;
+    padding-bottom: 20px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+  }
+  
+  .carousel-grid > * {
+    flex: 0 0 82%;
+    scroll-snap-align: center;
+  }
+
+  /* Compact Card Styling on Mobile */
+  .carousel-grid > .glass-card,
+  .carousel-grid .glass-card {
+    padding: 16px !important;
+  }
+  
+  .carousel-grid h3 {
+    font-size: 1.15rem !important;
+    margin-bottom: 8px !important;
+  }
+  
+  .carousel-grid p,
+  .carousel-grid li,
+  .carousel-grid span {
+    font-size: 0.95rem !important;
+    line-height: 1.5 !important;
+  }
+
+  .carousel-grid .badge {
+    padding: 4px 8px !important;
+    font-size: 0.85rem !important;
+  }
+
+  .tech-tags {
+    gap: 4px !important;
+  }
+
+  .tech-tag {
+    padding: 2px 6px !important;
+    font-size: 0.75rem !important;
+    border-radius: 4px !important;
+  }
+}
+
+/* ========================================================
    EUROPEAN STANDARD PRINT / PDF STYLING (ALL SECTIONS VISIBLE)
    ======================================================== */
 @media print {
@@ -1631,5 +1691,32 @@ html[dir="rtl"] .modal-close {
   a {
     color: #1e3a8a !important;
     text-decoration: none !important;
+  }
+
+  .gradient-text {
+    -webkit-text-fill-color: initial !important;
+    color: #1e3a8a !important;
+    background: none !important;
+  }
+
+  /* Force single column layout in print to prevent squishing and scrollbars */
+  .carousel-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    flex-wrap: nowrap !important;
+    overflow: visible !important;
+    gap: 15px !important;
+  }
+
+  .glass-card, .project-card, .timeline-card {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    margin-bottom: 15px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .mobile-nav-drawer, .nav-print-btn, .mobile-menu-toggle, .services-single-footer {
+    display: none !important;
   }
 }

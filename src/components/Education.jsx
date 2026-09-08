@@ -14,11 +14,11 @@ export function Education({ education, sections, lang }) {
         <p className="section-subtitle">{sections.educationSubtitle}</p>
       </div>
 
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '28px' }}>
+      <div className="carousel-grid">
         {education.map((edu) => (
-          <div key={edu.id} className="glass-card" style={{ padding: '28px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+          <div key={edu.id} className="glass-card" style={{ padding: '16px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
             <div>
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '14px', flexWrap: 'wrap', gap: '8px' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '10px', flexWrap: 'wrap', gap: '6px' }}>
                 <div className="badge" style={{ fontSize: '0.95rem', padding: '6px 14px' }}>
                   <Award size={15} />
                   <span>
@@ -34,17 +34,17 @@ export function Education({ education, sections, lang }) {
                 </div>
               </div>
 
-              <h3 style={{ fontSize: '1.45rem', fontWeight: '800', marginBottom: '8px', color: 'var(--text-main)' }}>
+              <h3 style={{ fontSize: '1.25rem', fontWeight: '800', marginBottom: '6px', color: 'var(--text-main)' }}>
                 {edu.degree}
               </h3>
 
-              <div style={{ color: 'var(--accent-primary)', fontWeight: '700', fontSize: '1.15rem', marginBottom: '10px' }}>
+              <div style={{ color: 'var(--accent-primary)', fontWeight: '700', fontSize: '1.05rem', marginBottom: '8px' }}>
                 {edu.institution}
               </div>
 
               {edu.honor && (
-                <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', background: '#eff6ff', color: '#1e40af', border: '1px solid #bfdbfe', padding: '5px 12px', borderRadius: '6px', fontSize: '0.98rem', fontWeight: '700', marginBottom: '14px' }}>
-                  <Sparkles size={16} />
+                <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', background: '#eff6ff', color: '#1e40af', border: '1px solid #bfdbfe', padding: '4px 10px', borderRadius: '6px', fontSize: '0.92rem', fontWeight: '700', marginBottom: '10px' }}>
+                  <Sparkles size={14} />
                   <span>{edu.honor}</span>
                 </div>
               )}
@@ -54,7 +54,7 @@ export function Education({ education, sections, lang }) {
                 <span>{edu.location}</span>
               </div>
 
-              <p style={{ color: 'var(--text-main)', fontSize: '1.15rem', lineHeight: '1.75', marginBottom: '16px', fontWeight: '500' }}>
+              <p style={{ color: 'var(--text-main)', fontSize: '1.02rem', lineHeight: '1.6', marginBottom: '12px', fontWeight: '500' }}>
                 {edu.details}
               </p>
 

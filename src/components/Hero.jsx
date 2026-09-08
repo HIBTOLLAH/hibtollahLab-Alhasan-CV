@@ -16,8 +16,8 @@ export function Hero({ personal, onOpenContact, navData, lang }) {
           </div>
 
           <h2 style={{ fontSize: '1.4rem', fontWeight: '800', marginBottom: '4px' }}>{personal.name}</h2>
-          <p style={{ color: 'var(--accent-primary)', fontWeight: '600', fontSize: '0.9rem', marginBottom: '16px' }}>
-            Full Stack & ERP Specialist
+          <p style={{ color: 'var(--accent-primary)', fontWeight: '600', fontSize: '1rem', marginBottom: '16px' }}>
+            {isAr ? 'مهندسة حاسوب' : (isTr ? 'Bilgisayar Mühendisi' : 'Computer Engineer')}
           </p>
 
           <div className="badge" style={{ marginBottom: '20px' }}>
@@ -59,7 +59,7 @@ export function Hero({ personal, onOpenContact, navData, lang }) {
           <div>
             <div className="badge" style={{ marginBottom: '12px' }}>
               <Award size={14} />
-              <span>Computer Engineering & Regional Business Growth</span>
+              <span>{isAr ? 'مهندسة حاسوب | مطورة ويب' : (isTr ? 'Bilgisayar Mühendisi | Web Geliştirici' : 'Computer Engineer | Web Developer')}</span>
             </div>
 
             <h1 style={{ fontSize: '2.8rem', fontWeight: '900', lineHeight: '1.25', marginBottom: '16px' }}>

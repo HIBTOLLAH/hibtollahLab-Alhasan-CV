@@ -2,16 +2,8 @@ import React, { useState } from 'react';
 import { Briefcase, Calendar, MapPin, Building2, ExternalLink, Code2, Boxes } from 'lucide-react';
 
 export function Experience({ experiences, sections, lang }) {
-  // Default to domain filter ('business' for ERP & Regional Business Dev) without 'all' option
-  const [filter, setFilter] = useState('business');
   const isAr = lang === 'ar';
   const isTr = lang === 'tr';
-
-  const filteredExperiences = experiences.filter(exp => {
-    if (filter === 'software') return exp.type === 'software';
-    if (filter === 'business') return exp.type === 'business-tech';
-    return true;
-  });
 
   return (
     <section id="experience" className="section">
@@ -22,30 +14,9 @@ export function Experience({ experiences, sections, lang }) {
         <p className="section-subtitle">{sections.experienceSubtitle}</p>
       </div>
 
-      {/* Domain Category Filter Tabs (Removed 'All' Option as requested) */}
-      <div style={{ display: 'flex', justifyContent: 'center', gap: '12px', marginBottom: '32px', flexWrap: 'wrap' }}>
-        <button
-          className={`btn ${filter === 'business' ? 'btn-primary' : 'btn-secondary'}`}
-          onClick={() => setFilter('business')}
-          style={{ padding: '10px 22px', fontSize: '1rem', fontWeight: '700' }}
-        >
-          <Boxes size={18} />
-          <span>{isAr ? 'أنظمة ERP وتطوير الأعمال' : (isTr ? 'ERP Sistemleri & İş Geliştirme' : 'ERP Systems & Business Dev')}</span>
-        </button>
-
-        <button
-          className={`btn ${filter === 'software' ? 'btn-primary' : 'btn-secondary'}`}
-          onClick={() => setFilter('software')}
-          style={{ padding: '10px 22px', fontSize: '1rem', fontWeight: '700' }}
-        >
-          <Code2 size={18} />
-          <span>{isAr ? 'تطوير البرمجيات (Full Stack)' : (isTr ? 'Yazılım Geliştirme' : 'Software Development (Full Stack)')}</span>
-        </button>
-      </div>
-
-      <div className="timeline">
-        {filteredExperiences.map((exp) => (
-          <div key={exp.id} className="glass-card timeline-card">
+      <div className="carousel-grid">
+        {experiences.map((exp) => (
+          <div key={exp.id} className="glass-card" style={{ padding: '20px', display: 'flex', flexDirection: 'column' }}>
             <div className="timeline-header">
               <div>
                 <div className="badge" style={{ marginBottom: '8px', fontSize: '0.95rem', padding: '6px 14px' }}>

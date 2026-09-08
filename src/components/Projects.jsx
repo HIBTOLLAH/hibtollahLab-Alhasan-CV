@@ -22,7 +22,7 @@ export function Projects({ projects, sections, lang }) {
         <p className="section-subtitle">{sections.projectsSubtitle}</p>
       </div>
 
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '28px' }}>
+      <div className="carousel-grid">
         {projects.map((proj) => (
           <div
             key={proj.id}
@@ -53,8 +53,8 @@ export function Projects({ projects, sections, lang }) {
               </div>
             )}
 
-            <div style={{ padding: '24px 24px 18px 24px' }}>
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px', flexWrap: 'wrap', gap: '8px' }}>
+            <div style={{ padding: '16px 16px 12px 16px' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px', flexWrap: 'wrap', gap: '6px' }}>
                 {!proj.image && (
                   <div className="badge" style={{ fontSize: '0.88rem', padding: '5px 12px' }}>
                     {getBadgeIcon(proj.badge)}
@@ -75,13 +75,13 @@ export function Projects({ projects, sections, lang }) {
                 </div>
               )}
 
-              <p style={{ color: 'var(--text-muted)', fontSize: '1.02rem', lineHeight: '1.7', marginBottom: '16px', fontWeight: '500' }}>
+              <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem', lineHeight: '1.6', marginBottom: '12px', fontWeight: '500' }}>
                 {proj.description}
               </p>
             </div>
 
-            <div style={{ padding: '0 24px 22px 24px' }}>
-              <div className="tech-tags" style={{ marginTop: '0', marginBottom: proj.website ? '14px' : '0' }}>
+            <div style={{ padding: '0 16px 16px 16px' }}>
+              <div className="tech-tags" style={{ marginTop: '0', marginBottom: proj.website ? '10px' : '0' }}>
                 {proj.technologies.map((tech, idx) => (
                   <span key={idx} className="tech-tag">
                     {tech}

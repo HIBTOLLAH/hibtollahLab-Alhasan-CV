@@ -12,7 +12,7 @@ import { ContactModal } from './components/ContactModal';
 import { Footer } from './components/Footer';
 
 export default function App() {
-  const [lang, setLang] = useState('en');
+  const [lang, setLang] = useState('tr');
   const [isContactOpen, setIsContactOpen] = useState(false);
 
   const currentData = cvData[lang] || cvData.en;

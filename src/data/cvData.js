@@ -5,7 +5,6 @@ export const cvData = {
       title: "مهندسة حاسوب | مطورة Full Stack | أخصائية تطوير أعمال إقليمية",
       bio: "مهندسة حاسوب تتمتع بخبرة ممتازة في تطوير البرمجيات الشاملة (Full Stack Development)، أنظمة إدارة الموارد (ERP)، وتطوير الأعمال الدولية. عملت بتقنيات React.js، Node.js، Firebase، .NET، SQL، وGitHub. بالإضافة إلى تطوير أنظمة ERP، قمت بمهام المبيعات، التواصل مع العملاء، وتطوير الأعمال الدولية في منطقتي الشرق الأوسط وشمال أفريقيا (MENA) وأفريقيا. أهدف إلى العمل بروح الفريق بتقديم حلول برمجية وتجارية متكاملة.",
       birthDate: "25/01/2003",
-      birthPlace: "دير الزور، سورية",
       citizenship: "سورية",
       gender: "أنثى",
       location: "مرسين، تركيا",
@@ -46,12 +45,12 @@ export const cvData = {
     experience: [
       {
         id: "zamir",
-        role: "Computer Engineer & Regional Business Development Specialist",
+        role: "مهندسة حاسوب وأخصائية تطوير أعمال إقليمية",
         company: "ZAMİR TEKNOLOJİ MAKİNA OTOMOTİV İTHALAT İHRACAT SAN. Vİ TİC. LTD. ŞTİ.",
         location: "مرسين، تركيا",
         period: "01/2026 - 07/2026",
         website: "https://ztofabrika.com/tr",
-        badge: "Full-Time",
+        badge: "دوام كامل",
         type: "business-tech",
         description: "تطوير أنظمة ERP باستعمال .NET و SQL وإدارة عمليات المبيعات وتطوير الأعمال في أفريقيا والشرق الأوسط.",
         highlights: [
@@ -65,7 +64,7 @@ export const cvData = {
       },
       {
         id: "ndm",
-        role: "Full Stack Developer",
+        role: "مطور واجهات متكاملة (Full Stack)",
         company: "NDM Software",
         location: "إسطنبول، تركيا",
         period: "08/2025 - 12/2025",
@@ -88,10 +87,10 @@ export const cvData = {
       {
         id: "zamir-website",
         title: "Zamir Teknoloji Website",
-        subtitle: "İzlenebilirlik | Gıda ERP Sistemi | Dijital Fabrika | Dijital Dönüşüm",
+        subtitle: "التتبع | نظام ERP للمصانع الغذائية | التحول الرقمي",
         category: "تصميم موقع لشركة Zamir Teknoloji",
-        badge: "Corporate Web",
-        image: "/projects/zamir-website.jpg",
+        badge: "موقع مؤسسي",
+        image: "/projects/zamir-website copy.JPG",
         description: "تصميم وتطوير الموقع الإلكتروني الرسمي لشركة Zamir Teknoloji (ZTO Fabrika)، لعرض حلول التحول الرقمي، أنظمة تتبع خطوط الإنتاج، والخدمات التكنولوجية المتقدمة للمصانع.",
         website: "https://ztofabrika.com/tr/",
         technologies: ["React.js", "HTML5 & CSS3", "Responsive UI/UX", "Web Design", "JavaScript"]
@@ -99,10 +98,10 @@ export const cvData = {
       {
         id: "zto-fabrika-erp",
         title: "ZTO Fabrika ERP System",
-        subtitle: "Fabrika Yönetim ve İzlenebilirlik Sistemi",
+        subtitle: "نظام إدارة وتتبع المصانع",
         category: "نظام ERP لإدارة المصانع والتتبع",
-        badge: "Enterprise ERP",
-        image: "/projects/zto-erp.jpg",
+        badge: "نظام مؤسسات ERP",
+        image: "/projects/image.png",
         description: "نظام ERP متكامل لإدارة المصانع الرقمية والغذائية والتحول الرقمي، يشتمل على تتبع وتوثيق خطوط الإنتاج والعمليات وإدارة المخزون والتكامل مع قواعد البيانات المعقدة.",
         website: "https://zto-factory.com/",
         technologies: [".NET", "SQL", "ERP Architecture", "Traceability", "Digital Transformation", "Industry 4.0"]
@@ -111,8 +110,8 @@ export const cvData = {
         id: "khabiir",
         title: "منصة خبير (Khabiir)",
         category: "منصة خدمات واستشارات",
-        badge: "Web Platform",
-        image: "/projects/khabiir.jpg",
+        badge: "منصة ويب",
+        image: "/projects/khabiir copy.JPG",
         description: "منصة تفاعلية تتيح التواصل وحجز الاستشارات مع الخبراء والمتخصصين عبر واجهات ويب حديثة وسريعة ولوحات تحكم لإدارة المواعيد والخدمات.",
         website: "https://khabiir.com/",
         technologies: ["React.js", "Node.js", "REST APIs", "Full Stack", "JavaScript"]
@@ -121,7 +120,7 @@ export const cvData = {
         id: "brand",
         title: "Brand",
         category: "متجر إلكتروني متكامل",
-        badge: "E-Commerce",
+        badge: "متجر إلكتروني",
         image: "/projects/brand.jpg",
         description: "منصة متجر إلكتروني حديثة متكاملة للعلامة التجارية Brand، تشتمل على عرض المنتجات، إدارة السلة والطلبات، ولوحة إدارة وتحكم بالمنتجات والمدفوعات.",
         website: "",
@@ -137,7 +136,12 @@ export const cvData = {
         location: "بارتن، تركيا",
         period: "01/2022 - 07/2025",
         website: "https://www.bartin.edu.tr",
-        details: "دراسة هندسة الحاسوب والبرمجيات، خوارزميات البيانات، قواعد البيانات، والتطوير البرمجي الهيكلي — التخرج بدرجة الشرف (Honor Degree)."
+        details: "دراسة هندسة الحاسوب والبرمجيات، خوارزميات البيانات، قواعد البيانات، والتطوير البرمجي الهيكلي — التخرج بدرجة الشرف (Honor Degree).",
+        highlights: [
+          "مشروع التخرج: \"نظام اتصالات وتحكم بالطائرات بدون طيار (Drone) للكوارث الطبيعية\" باستخدام شبكات متداخلة (Mesh Network) وبروتوكول BATMAN لضمان اتصال مستمر.",
+          "تطوير تطبيق ويب للدردشة لتمكين التواصل بين الأفراد في مناطق الكوارث عند انقطاع الشبكات الأرضية.",
+          "دمج نظام تحكم جماعي (Swarm Control) للتحكم المركزي في طائرات متعددة، مع توزيع المهام والأدوار كبوابة (Gateway)، وجسر (Bridge)، ومساعد (Secondary)."
+        ]
       },
       {
         id: "eterna",
@@ -201,7 +205,7 @@ export const cvData = {
         id: "fullstack-dev",
         title: "تطوير تطبيقات الويب المتكاملة (Full Stack)",
         subtitle: "React.js, Node.js & REST APIs",
-        badge: "Web Engineering",
+        badge: "هندسة الويب",
         icon: "Code2",
         description: "تصميم وبناء تطبيقات ويب حديثة، متجاوبة مع كافة الشاشات، وسريعة الأداء. تشمل بناء واجهات مستخدم جذابة بـ React.js وتطوير خدمات خادم آمنة وقابلة للتوسع بـ Node.js و REST APIs.",
         features: [
@@ -214,8 +218,8 @@ export const cvData = {
       {
         id: "erp-net",
         title: "تطوير وتخصيص أنظمة ERP و .NET",
-        subtitle: "Enterprise Resource Planning",
-        badge: "Enterprise Systems",
+        subtitle: "تخطيط موارد المؤسسات (ERP)",
+        badge: "أنظمة المؤسسات",
         icon: "Boxes",
         description: "تطوير وبناء وحدات برمجية مخصصة لأنظمة إدارة الموارد للمؤسسات والمصانع الرقمية والغذائية، إدارة تتبع خطوط الإنتاج والعمليات، والربط مع قواعد البيانات المعقدة.",
         features: [
@@ -228,8 +232,8 @@ export const cvData = {
       {
         id: "biz-dev-b2b",
         title: "تطوير الأعمال الدولية والمبيعات (MENA & Africa)",
-        subtitle: "B2B Sales & International Relations",
-        badge: "Business Growth",
+        subtitle: "مبيعات B2B والعلاقات الدولية",
+        badge: "تنمية الأعمال",
         icon: "Globe",
         description: "إدارة وتوجيه عمليات المبيعات B2B وتطوير الأعمال في منطقتي الشرق الأوسط وشمال أفريقيا (MENA) وأفريقيا، بناء علاقات استراتيجية وإجراء المفاوضات التجارية باللغتين العربية والتركية.",
         features: [
@@ -242,8 +246,8 @@ export const cvData = {
       {
         id: "ecommerce-platforms",
         title: "بناء المنصات والمتاجر الإلكترونية",
-        subtitle: "E-Commerce Solutions",
-        badge: "Digital Retail",
+        subtitle: "حلول التجارة الإلكترونية",
+        badge: "تجارة التجزئة الرقمية",
         icon: "ShoppingBag",
         description: "تطوير منصات متاجر إلكترونية متكاملة تتيح استعراض المنتجات، إدارة السلة والطلبات، ولوحات تحكم لإدارة المنتجات، المخزون، والعملاء بسلاسة وأمان.",
         features: [
@@ -256,8 +260,8 @@ export const cvData = {
       {
         id: "ai-speech",
         title: "دمج حلول الذكاء الاصطناعي ومعالجة الصوت",
-        subtitle: "Speech Recognition & AI Tools",
-        badge: "AI & Innovation",
+        subtitle: "التعرف على الصوت وأدوات الذكاء الاصطناعي",
+        badge: "الذكاء الاصطناعي",
         icon: "Cpu",
         description: "تطوير وتكامل تطبيقات الذكاء الاصطناعي الخاصة بمعالجة الصوت وتحويله إلى نصوص (Speech-to-Text) باستخدام Python وبناء واجهات تفاعلية للتحكم والتحليل.",
         features: [
@@ -270,8 +274,8 @@ export const cvData = {
       {
         id: "tech-consulting",
         title: "الاستشارات التقنية وهندسة الحلول",
-        subtitle: "Technical Consulting & Architecture",
-        badge: "Consultations",
+        subtitle: "استشارات تقنية وهندسة الأنظمة",
+        badge: "استشارات",
         icon: "Lightbulb",
         description: "تقديم استشارات تقنية وهندسية شاملة لمساعدة الشركات والشركات الناشئة في اختيار البنية التحتية المناسبة، تحسين الكود المصدري، وبناء حلول رقمية قابلة للتوسع.",
         features: [
@@ -286,10 +290,9 @@ export const cvData = {
   tr: {
     personal: {
       name: "Hibtollah Alhasan",
-      title: "Computer Engineer | Full Stack Developer | Bölgesel İş Geliştirme Uzmanı",
+      title: "Bilgisayar Mühendisi | Full Stack Developer | Bölgesel İş Geliştirme Uzmanı",
       bio: "Bilgisayar Mühendisi olarak Full Stack Development, ERP ve uluslararası iş geliştirme alanlarında deneyim sahibiyim. React.js, Node.js, Firebase, .NET, SQL ve GitHub teknolojileriyle çalıştım. ERP geliştirme süreçlerinin yanı sıra Afrika ve MENA bölgelerinde satış, müşteri iletişimi ve uluslararası iş geliştirme faaliyetlerinde görev aldım. Teknik ve ticari yetkinliklerimi birleştirerek çözüm odaklı çalışmayı hedefliyorum.",
       birthDate: "25/01/2003",
-      birthPlace: "DEYRIZOR, Suriye",
       citizenship: "Suriyeli",
       gender: "Kadın",
       location: "MERSİN, Türkiye",
@@ -330,7 +333,7 @@ export const cvData = {
     experience: [
       {
         id: "zamir",
-        role: "Computer Engineer & Regional Business Development Specialist",
+        role: "Bilgisayar Mühendisi ve Bölgesel İş Geliştirme Uzmanı",
         company: "ZAMİR TEKNOLOJİ MAKİNA OTOMOTİV İTHALAT İHRACAT SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
         location: "Mersin, Türkiye",
         period: "01/2026 – 07/2026",
@@ -349,7 +352,7 @@ export const cvData = {
       },
       {
         id: "ndm",
-        role: "Full Stack Developer",
+        role: "Full Stack Geliştirici",
         company: "NDM Software",
         location: "İstanbul, Türkiye",
         period: "08/2025 – 12/2025",
@@ -375,8 +378,8 @@ export const cvData = {
         title: "Zamir Teknoloji Website",
         subtitle: "İzlenebilirlik | Gıda ERP Sistemi | Dijital Fabrika | Dijital Dönüşüm",
         category: "Zamir Teknoloji Kurumsal Web Sitesi",
-        badge: "Corporate Web",
-        image: "/projects/zamir-website.jpg",
+        badge: "Kurumsal Web",
+        image: "/projects/zamir-website copy.JPG",
         description: "Zamir Teknoloji (ZTO Fabrika) firması için geliştirilen kurumsal web sitesi tasarımı; dijital dönüşüm, gıda ERP ve izlenebilirlik çözümlerini sergileyen modern web platformu.",
         website: "https://ztofabrika.com/tr/",
         technologies: ["React.js", "HTML5 & CSS3", "Responsive UI/UX", "Web Design", "JavaScript"]
@@ -386,8 +389,8 @@ export const cvData = {
         title: "ZTO Fabrika ERP System",
         subtitle: "Fabrika Yönetim ve İzlenebilirlik Sistemi",
         category: "Fabrika Yönetim ve İzlenebilirlik Sistemi (ERP)",
-        badge: "Enterprise ERP",
-        image: "/projects/zto-erp.jpg",
+        badge: "Kurumsal ERP",
+        image: "/projects/image.png",
         description: "Dijital gıda fabrikaları için izlenebilirlik, üretim süreçleri, stok yönetimi, dijital dönüşüm ve Endüstri 4.0 veri entegrasyonu sağlayan kurumsal ERP sistemi.",
         website: "https://zto-factory.com/",
         technologies: [".NET", "SQL", "ERP Architecture", "Traceability", "Digital Transformation", "Industry 4.0"]
@@ -397,7 +400,7 @@ export const cvData = {
         title: "Khabiir Platformu",
         category: "Danışmanlık & Uzman Platformu",
         badge: "Web Platformu",
-        image: "/projects/khabiir.jpg",
+        image: "/projects/khabiir copy.JPG",
         description: "Uzmanlar ve danışmanlar ile kullanıcıları bir araya getiren, randevu ve hizmet yönetimli modern web platformu.",
         website: "https://khabiir.com/",
         technologies: ["React.js", "Node.js", "REST APIs", "Full Stack", "JavaScript"]
@@ -422,7 +425,12 @@ export const cvData = {
         location: "Bartın, Türkiye",
         period: "01/2022 – 07/2025",
         website: "https://www.bartin.edu.tr",
-        details: "Bilgisayar Mühendisliği Lisans Eğitimi — Onur Derecesi (Honor Degree) ile mezuniyet."
+        details: "Bilgisayar Mühendisliği Lisans Eğitimi — Onur Derecesi (Honor Degree) ile mezuniyet.",
+        highlights: [
+          "Mezuniyet Projesi: Doğal Afetler İçin Drone Tabanlı Haberleşme ve Kontrol Sistemi. Mesh network altyapısı ve BATMAN protokolü kullanılarak dronelar arasında kesintisiz iletişim sağlandı.",
+          "Afet bölgesindeki bireylerin iletişim kurabilmesi için web tabanlı bir sohbet uygulaması geliştirildi.",
+          "Birden fazla drone'un aynı anda merkezi olarak kontrol edilmesini sağlayan swarm control (sürü kontrol) uygulaması entegre edildi. Dronelar Gateway, Bridge ve Secondary rol üstlenerek görev paylaşımı yapabilmektedir."
+        ]
       },
       {
         id: "eterna",
@@ -486,7 +494,7 @@ export const cvData = {
         id: "fullstack-dev",
         title: "Uçtan Uca Web Geliştirme (Full Stack)",
         subtitle: "React.js, Node.js & REST APIs",
-        badge: "Web Engineering",
+        badge: "Web Mühendisliği",
         icon: "Code2",
         description: "Kullanıcı dostu, hızlı ve modern web uygulamalarının geliştirilmesi. React.js ile dinamik arayüzler ve Node.js & REST API ile güvenli, ölçeklenebilir arka plan servisleri.",
         features: [
@@ -499,8 +507,8 @@ export const cvData = {
       {
         id: "erp-net",
         title: "ERP Sistemleri & .NET Geliştirme",
-        subtitle: "Enterprise Resource Planning",
-        badge: "Enterprise Systems",
+        subtitle: "Kurumsal Kaynak Planlama (ERP)",
+        badge: "Kurumsal Sistemler",
         icon: "Boxes",
         description: "Kurumsal ERP yazılımları ve fabrika yönetim sistemleri için .NET altyapısında özel modüller geliştirme, üretim hattı takibi ve SQL veritabanı entegrasyonu.",
         features: [
@@ -513,8 +521,8 @@ export const cvData = {
       {
         id: "biz-dev-b2b",
         title: "Bölgesel İş Geliştirme & B2B Satış (MENA & Afrika)",
-        subtitle: "B2B Sales & International Relations",
-        badge: "Business Growth",
+        subtitle: "B2B Satış & Uluslararası İlişkiler",
+        badge: "İş Büyütme",
         icon: "Globe",
         description: "MENA ve Afrika bölgelerinde B2B satış yönetimi, uluslararası pazar araştırması, müşteri ilişkileri ve ticari müzakerelerin yürütülmesi.",
         features: [
@@ -527,8 +535,8 @@ export const cvData = {
       {
         id: "ecommerce-platforms",
         title: "E-Ticaret & Dijital Platform Çözümleri",
-        subtitle: "E-Commerce Solutions",
-        badge: "Digital Retail",
+        subtitle: "E-Ticaret Çözümleri",
+        badge: "Dijital Perakende",
         icon: "ShoppingBag",
         description: "Ürün yönetimi, sepet sistemleri, sipariş takibi ve yönetim panellerini kapsayan modern ve güvenli e-ticaret platformlarının geliştirilmesi.",
         features: [
@@ -541,8 +549,8 @@ export const cvData = {
       {
         id: "ai-speech",
         title: "Yapay Zeka & Ses İşleme Çözümleri",
-        subtitle: "Speech Recognition & AI Tools",
-        badge: "AI & Innovation",
+        subtitle: "Ses Tanıma & Yapay Zeka Araçları",
+        badge: "Yapay Zeka ve İnovasyon",
         icon: "Cpu",
         description: "Python ile ses tanıma ve sesten metne dönüştürme (Speech-to-Text) uygulamalarının geliştirilmesi ve web platformlarına entegrasyonu.",
         features: [
@@ -555,8 +563,8 @@ export const cvData = {
       {
         id: "tech-consulting",
         title: "Teknik Danışmanlık & Sistem Mimarisi",
-        subtitle: "Technical Consulting & Architecture",
-        badge: "Consultations",
+        subtitle: "Teknik Danışmanlık & Mimari",
+        badge: "Teknik Danışmanlık",
         icon: "Lightbulb",
         description: "Şirketler ve girişimler için teknoloji seçimi, yazılım mimarisi, veritabanı tasarımı ve ölçeklenebilir dijital çözümler konusunda teknik danışmanlık.",
         features: [
@@ -574,7 +582,6 @@ export const cvData = {
       title: "Computer Engineer | Full Stack Developer | Regional Business Development Specialist",
       bio: "As a Computer Engineer, I have solid expertise in Full Stack Development, ERP systems, and international business development. Experienced with React.js, Node.js, Firebase, .NET, SQL, and GitHub. Alongside software engineering, I actively managed B2B sales, client communications, and market expansion across MENA & Africa. I aim to merge technical precision with commercial expertise to deliver impactful solutions.",
       birthDate: "25/01/2003",
-      birthPlace: "Deir ez-Zor, Syria",
       citizenship: "Syrian",
       gender: "Female",
       location: "Mersin, Türkiye",
@@ -660,7 +667,7 @@ export const cvData = {
         subtitle: "Traceability | Food ERP System | Digital Factory | Digital Transformation",
         category: "Zamir Teknoloji Corporate Website",
         badge: "Corporate Web",
-        image: "/projects/zamir-website.jpg",
+        image: "/projects/zamir-website copy.JPG",
         description: "Official corporate website design & development for Zamir Teknoloji (ZTO Fabrika), presenting digital transformation, food ERP, and industrial traceability solutions.",
         website: "https://ztofabrika.com/tr/",
         technologies: ["React.js", "HTML5 & CSS3", "Responsive UI/UX", "Web Design", "JavaScript"]
@@ -671,8 +678,7 @@ export const cvData = {
         subtitle: "Factory Management & Traceability System",
         category: "Factory Management & Traceability ERP System",
         badge: "Enterprise ERP",
-        image: "/projects/zto-erp.jpg",
-        image: "/projects/zto-erp.jpg",
+        image: "/projects/image.png",
         description: "Enterprise ERP & traceability platform for digital food factories, enabling Industry 4.0 digital transformation, production tracking, and SQL database operations.",
         website: "https://zto-factory.com/",
         technologies: [".NET", "SQL", "ERP Architecture", "Traceability", "Digital Transformation", "Industry 4.0"]
@@ -682,7 +688,7 @@ export const cvData = {
         title: "Khabiir Platform",
         category: "Expert Consultation Platform",
         badge: "Web Platform",
-        image: "/projects/khabiir.jpg",
+        image: "/projects/khabiir copy.JPG",
         description: "Modern web application facilitating seamless expert consultations, appointment scheduling, and admin panel management.",
         website: "https://khabiir.com/",
         technologies: ["React.js", "Node.js", "REST APIs", "Full Stack", "JavaScript"]
@@ -707,7 +713,12 @@ export const cvData = {
         location: "Bartın, Türkiye",
         period: "01/2022 – 07/2025",
         website: "https://www.bartin.edu.tr",
-        details: "Bachelor's degree in Computer Engineering — Graduated with Academic Honor Degree."
+        details: "Bachelor's degree in Computer Engineering — Graduated with Academic Honor Degree.",
+        highlights: [
+          "Graduation Project: \"Drone-Based Communication and Control System for Natural Disasters\" utilizing Mesh network infrastructure and the BATMAN protocol for uninterrupted drone-to-drone communication.",
+          "Developed a web-based chat application enabling communication among individuals in disaster zones during network outages.",
+          "Integrated a swarm control system for centralized management of multiple drones, assigning them dynamic roles such as Gateway, Bridge, and Secondary."
+        ]
       },
       {
         id: "eterna",
