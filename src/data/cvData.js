@@ -23,6 +23,7 @@ export const cvData = {
       skills: "المهارات والتقنيات",
       languages: "اللغات",
       contact: "تواصل معي",
+      requestServiceContact: "طلب خدمة / تواصل",
       printPdf: "تحميل / طباعة CV"
     },
     sections: {
@@ -120,9 +121,10 @@ export const cvData = {
         id: "brand",
         title: "Brand",
         category: "متجر إلكتروني متكامل",
-        badge: "متجر إلكتروني",
+        badge: "قيد التطوير",
+        status: "in-progress",
         image: "/projects/brand.jpg",
-        description: "منصة متجر إلكتروني حديثة متكاملة للعلامة التجارية Brand، تشتمل على عرض المنتجات، إدارة السلة والطلبات، ولوحة إدارة وتحكم بالمنتجات والمدفوعات.",
+        description: "منصة متجر إلكتروني حديثة متكاملة للعلامة التجارية Brand (قيد التطوير والبرمجة حالياً)، تشتمل على عرض المنتجات، إدارة السلة والطلبات، ولوحة إدارة وتحكم بالمنتجات والمدفوعات.",
         website: "",
         technologies: ["React.js", "Node.js", "Firebase", "E-Commerce UI", "Responsive Design"]
       }
@@ -311,6 +313,7 @@ export const cvData = {
       skills: "Yetenekler",
       languages: "Dil Becerileri",
       contact: "İletişim",
+      requestServiceContact: "Hizmet Talebi / İletişim",
       printPdf: "CV İndir / Yazdır"
     },
     sections: {
@@ -409,9 +412,10 @@ export const cvData = {
         id: "brand",
         title: "Brand",
         category: "E-Ticaret Platformu",
-        badge: "E-Ticaret",
+        badge: "Geliştirme Aşamasında",
+        status: "in-progress",
         image: "/projects/brand.jpg",
-        description: "Brand markası ürünleri için geliştirilen, sepet yönetimi, ürün kataloğu ve sipariş takibi sunan modern e-ticaret çözümü.",
+        description: "Brand markası ürünleri için geliştirilmekte olan (aktif geliştirme sürecinde), sepet yönetimi, ürün kataloğu ve sipariş takibi sunan modern e-ticaret çözümü.",
         website: "",
         technologies: ["React.js", "Node.js", "Firebase", "E-Commerce UI", "Responsive Design"]
       }
@@ -600,6 +604,7 @@ export const cvData = {
       skills: "Skills",
       languages: "Languages",
       contact: "Contact",
+      requestServiceContact: "Request Service / Contact",
       printPdf: "Print / PDF CV"
     },
     sections: {
@@ -697,9 +702,10 @@ export const cvData = {
         id: "brand",
         title: "Brand",
         category: "E-Commerce Platform",
-        badge: "E-Commerce",
+        badge: "In Development",
+        status: "in-progress",
         image: "/projects/brand.jpg",
-        description: "Full-featured e-commerce solution engineered for Brand, featuring product catalog, cart checkout, and admin management dashboard.",
+        description: "Full-featured modern e-commerce platform currently in active development for Brand, featuring product catalog, cart checkout, and admin management dashboard.",
         website: "",
         technologies: ["React.js", "Node.js", "Firebase", "E-Commerce UI", "Responsive Design"]
       }

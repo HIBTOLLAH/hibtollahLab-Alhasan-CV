@@ -51,10 +51,10 @@ export function Navbar({ lang, setLang, navData, onOpenContact }) {
         {/* Desktop Links */}
         <ul className="nav-links">
           <li><a href="#about" className="nav-link" onClick={(e) => handleNavClick(e, 'about')}>{navData.about}</a></li>
-          <li><a href="#services" className="nav-link" onClick={(e) => handleNavClick(e, 'services')}>{navData.services}</a></li>
           <li><a href="#experience" className="nav-link" onClick={(e) => handleNavClick(e, 'experience')}>{navData.experience}</a></li>
           <li><a href="#projects" className="nav-link" onClick={(e) => handleNavClick(e, 'projects')}>{navData.projects}</a></li>
           <li><a href="#education" className="nav-link" onClick={(e) => handleNavClick(e, 'education')}>{navData.education}</a></li>
+          <li><a href="#services" className="nav-link" onClick={(e) => handleNavClick(e, 'services')}>{navData.services}</a></li>
         </ul>
 
         {/* Controls */}
@@ -121,13 +121,6 @@ export function Navbar({ lang, setLang, navData, onOpenContact }) {
                 </a>
               </li>
               <li>
-                <a href="#services" className="mobile-nav-link" onClick={(e) => handleNavClick(e, 'services')}>
-                  <Boxes size={18} />
-                  <span>{navData.services}</span>
-                  <ChevronRight size={16} className="chevron-icon" />
-                </a>
-              </li>
-              <li>
                 <a href="#experience" className="mobile-nav-link" onClick={(e) => handleNavClick(e, 'experience')}>
                   <Briefcase size={18} />
                   <span>{navData.experience}</span>
@@ -145,6 +138,13 @@ export function Navbar({ lang, setLang, navData, onOpenContact }) {
                 <a href="#education" className="mobile-nav-link" onClick={(e) => handleNavClick(e, 'education')}>
                   <GraduationCap size={18} />
                   <span>{navData.education}</span>
+                  <ChevronRight size={16} className="chevron-icon" />
+                </a>
+              </li>
+              <li>
+                <a href="#services" className="mobile-nav-link" onClick={(e) => handleNavClick(e, 'services')}>
+                  <Boxes size={18} />
+                  <span>{navData.services}</span>
                   <ChevronRight size={16} className="chevron-icon" />
                 </a>
               </li>

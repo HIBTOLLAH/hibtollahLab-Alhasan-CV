@@ -51,13 +51,6 @@ export default function App() {
           lang={lang}
         />
 
-        <Services
-          services={currentData.services}
-          sections={currentData.sections}
-          lang={lang}
-          onOpenContact={() => setIsContactOpen(true)}
-        />
-
         <Experience
           experiences={currentData.experience}
           sections={currentData.sections}
@@ -74,6 +67,13 @@ export default function App() {
           education={currentData.education}
           sections={currentData.sections}
           lang={lang}
+        />
+
+        <Services
+          services={currentData.services}
+          sections={currentData.sections}
+          lang={lang}
+          onOpenContact={() => setIsContactOpen(true)}
         />
       </main>
 

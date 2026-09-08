@@ -6,7 +6,7 @@ export function Hero({ personal, onOpenContact, navData, lang }) {
   const isTr = lang === 'tr';
 
   return (
-    <section className="section" style={{ paddingTop: '40px' }}>
+    <section className="section" style={{ paddingTop: '20px' }}>
       <div className="hero-grid">
         {/* Avatar & Sidebar Info Card */}
         <div className="glass-card profile-card">
@@ -109,7 +109,7 @@ export function Hero({ personal, onOpenContact, navData, lang }) {
           <div style={{ display: 'flex', gap: '14px', marginTop: '10px', flexWrap: 'wrap' }}>
             <button className="btn btn-primary" onClick={onOpenContact}>
               <Mail size={18} />
-              <span>{navData.contact}</span>
+              <span>{navData.requestServiceContact || (isAr ? 'طلب خدمة / تواصل' : (isTr ? 'Hizmet Talebi / İletişim' : 'Request Service / Contact'))}</span>
             </button>
             <button className="btn btn-secondary" onClick={() => window.print()}>
               <Briefcase size={18} />
