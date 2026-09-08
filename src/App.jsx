@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { cvData } from './data/cvData';
 import { Navbar } from './components/Navbar';
 import { TechBackground } from './components/TechBackground';
@@ -86,6 +87,9 @@ export default function App() {
 
       {/* Footer */}
       <Footer personal={currentData.personal} lang={lang} />
+
+      {/* Vercel Web Analytics */}
+      <Analytics />
     </div>
   );
 }
